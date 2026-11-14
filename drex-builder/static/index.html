@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drex Builder</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Drex Builder</h1>
+    <div id="roster" aria-label="Active agents"></div>
+  </header>
+  <main id="log" aria-live="polite">
+    <div class="empty">Describe a project to build. Say hi if you just want to chat.</div>
+  </main>
+  <form id="composer">
+    <textarea id="input" rows="1" placeholder="Build a sentiment classifier for product reviews…" autofocus></textarea>
+    <button id="send" type="submit">Send</button>
+  </form>
+  <script src="/static/app.js"></script>
+</body>
+</html>
